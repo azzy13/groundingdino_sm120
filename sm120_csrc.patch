@@ -1,0 +1,82 @@
+diff -r groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu
+36,40c36,40
+<     AT_ASSERTM(value.type().is_cuda(), "value must be a CUDA tensor");
+<     AT_ASSERTM(spatial_shapes.type().is_cuda(), "spatial_shapes must be a CUDA tensor");
+<     AT_ASSERTM(level_start_index.type().is_cuda(), "level_start_index must be a CUDA tensor");
+<     AT_ASSERTM(sampling_loc.type().is_cuda(), "sampling_loc must be a CUDA tensor");
+<     AT_ASSERTM(attn_weight.type().is_cuda(), "attn_weight must be a CUDA tensor");
+---
+>     AT_ASSERTM(value.is_cuda(), "value must be a CUDA tensor");
+>     AT_ASSERTM(spatial_shapes.is_cuda(), "spatial_shapes must be a CUDA tensor");
+>     AT_ASSERTM(level_start_index.is_cuda(), "level_start_index must be a CUDA tensor");
+>     AT_ASSERTM(sampling_loc.is_cuda(), "sampling_loc must be a CUDA tensor");
+>     AT_ASSERTM(attn_weight.is_cuda(), "attn_weight must be a CUDA tensor");
+66c66
+<         AT_DISPATCH_FLOATING_TYPES(value.type(), "ms_deform_attn_forward_cuda", ([&] {
+---
+>         AT_DISPATCH_FLOATING_TYPES(value.scalar_type(), "ms_deform_attn_forward_cuda", ([&] {
+68,72c68,72
+<                 value.data<scalar_t>() + n * im2col_step_ * per_value_size,
+<                 spatial_shapes.data<int64_t>(),
+<                 level_start_index.data<int64_t>(),
+<                 sampling_loc.data<scalar_t>() + n * im2col_step_ * per_sample_loc_size,
+<                 attn_weight.data<scalar_t>() + n * im2col_step_ * per_attn_weight_size,
+---
+>                 value.data_ptr<scalar_t>() + n * im2col_step_ * per_value_size,
+>                 spatial_shapes.data_ptr<int64_t>(),
+>                 level_start_index.data_ptr<int64_t>(),
+>                 sampling_loc.data_ptr<scalar_t>() + n * im2col_step_ * per_sample_loc_size,
+>                 attn_weight.data_ptr<scalar_t>() + n * im2col_step_ * per_attn_weight_size,
+74c74
+<                 columns.data<scalar_t>());
+---
+>                 columns.data_ptr<scalar_t>());
+102,107c102,107
+<     AT_ASSERTM(value.type().is_cuda(), "value must be a CUDA tensor");
+<     AT_ASSERTM(spatial_shapes.type().is_cuda(), "spatial_shapes must be a CUDA tensor");
+<     AT_ASSERTM(level_start_index.type().is_cuda(), "level_start_index must be a CUDA tensor");
+<     AT_ASSERTM(sampling_loc.type().is_cuda(), "sampling_loc must be a CUDA tensor");
+<     AT_ASSERTM(attn_weight.type().is_cuda(), "attn_weight must be a CUDA tensor");
+<     AT_ASSERTM(grad_output.type().is_cuda(), "grad_output must be a CUDA tensor");
+---
+>     AT_ASSERTM(value.is_cuda(), "value must be a CUDA tensor");
+>     AT_ASSERTM(spatial_shapes.is_cuda(), "spatial_shapes must be a CUDA tensor");
+>     AT_ASSERTM(level_start_index.is_cuda(), "level_start_index must be a CUDA tensor");
+>     AT_ASSERTM(sampling_loc.is_cuda(), "sampling_loc must be a CUDA tensor");
+>     AT_ASSERTM(attn_weight.is_cuda(), "attn_weight must be a CUDA tensor");
+>     AT_ASSERTM(grad_output.is_cuda(), "grad_output must be a CUDA tensor");
+136c136
+<         AT_DISPATCH_FLOATING_TYPES(value.type(), "ms_deform_attn_backward_cuda", ([&] {
+---
+>         AT_DISPATCH_FLOATING_TYPES(value.scalar_type(), "ms_deform_attn_backward_cuda", ([&] {
+138,143c138,143
+<                                     grad_output_g.data<scalar_t>(),
+<                                     value.data<scalar_t>() + n * im2col_step_ * per_value_size,
+<                                     spatial_shapes.data<int64_t>(),
+<                                     level_start_index.data<int64_t>(),
+<                                     sampling_loc.data<scalar_t>() + n * im2col_step_ * per_sample_loc_size,
+<                                     attn_weight.data<scalar_t>() + n * im2col_step_ * per_attn_weight_size,
+---
+>                                     grad_output_g.data_ptr<scalar_t>(),
+>                                     value.data_ptr<scalar_t>() + n * im2col_step_ * per_value_size,
+>                                     spatial_shapes.data_ptr<int64_t>(),
+>                                     level_start_index.data_ptr<int64_t>(),
+>                                     sampling_loc.data_ptr<scalar_t>() + n * im2col_step_ * per_sample_loc_size,
+>                                     attn_weight.data_ptr<scalar_t>() + n * im2col_step_ * per_attn_weight_size,
+145,147c145,147
+<                                     grad_value.data<scalar_t>() +  n * im2col_step_ * per_value_size,
+<                                     grad_sampling_loc.data<scalar_t>() + n * im2col_step_ * per_sample_loc_size,
+<                                     grad_attn_weight.data<scalar_t>() + n * im2col_step_ * per_attn_weight_size);
+---
+>                                     grad_value.data_ptr<scalar_t>() +  n * im2col_step_ * per_value_size,
+>                                     grad_sampling_loc.data_ptr<scalar_t>() + n * im2col_step_ * per_sample_loc_size,
+>                                     grad_attn_weight.data_ptr<scalar_t>() + n * im2col_step_ * per_attn_weight_size);
+diff -r groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn.h /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn.h
+30c30
+<     if (value.type().is_cuda())
+---
+>     if (value.is_cuda())
+52c52
+<     if (value.type().is_cuda())
+---
+>     if (value.is_cuda())

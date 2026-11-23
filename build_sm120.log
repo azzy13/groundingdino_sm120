@@ -1,0 +1,382 @@
+Using pip 26.2.2 from /isis/home/hasana3/miniconda3/envs/dino_sm120/lib/python3.10/site-packages/pip (python 3.10)
+Processing ./.
+  Preparing metadata (pyproject.toml): started
+  Running command Preparing metadata (pyproject.toml)
+  /isis/home/hasana3/miniconda3/envs/dino_sm120/lib/python3.10/site-packages/setuptools/config/_apply_pyprojecttoml.py:82: SetuptoolsDeprecationWarning: `project.license` as a TOML table is deprecated
+  !!
+
+          ********************************************************************************
+          Please use a simple string containing a SPDX expression for `project.license`. You can also use `project.license-files`. (Both options available on setuptools>=77.0.0).
+
+          By 2027-Feb-18, you need to update your project and remove deprecated calls
+          or your builds will no longer be supported.
+
+          See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+          ********************************************************************************
+
+  !!
+    corresp(dist, value, root_dir)
+  Compiling sources: ['groundingdino/models/GroundingDINO/csrc/cuda_version.cu', 'groundingdino/models/GroundingDINO/csrc/vision.cpp', 'groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu', 'groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cpu.cpp']
+  Compiling with CUDA (CUDA_HOME: /isis/home/hasana3/miniconda3/envs/dino_sm120)
+  running dist_info
+  creating /tmp/pip-modern-metadata-o3jez5cz/groundingdino.egg-info
+  writing /tmp/pip-modern-metadata-o3jez5cz/groundingdino.egg-info/PKG-INFO
+  writing dependency_links to /tmp/pip-modern-metadata-o3jez5cz/groundingdino.egg-info/dependency_links.txt
+  writing requirements to /tmp/pip-modern-metadata-o3jez5cz/groundingdino.egg-info/requires.txt
+  writing top-level names to /tmp/pip-modern-metadata-o3jez5cz/groundingdino.egg-info/top_level.txt
+  writing manifest file '/tmp/pip-modern-metadata-o3jez5cz/groundingdino.egg-info/SOURCES.txt'
+  reading manifest file '/tmp/pip-modern-metadata-o3jez5cz/groundingdino.egg-info/SOURCES.txt'
+  adding license file 'LICENSE'
+  writing manifest file '/tmp/pip-modern-metadata-o3jez5cz/groundingdino.egg-info/SOURCES.txt'
+  creating '/tmp/pip-modern-metadata-o3jez5cz/groundingdino-0.1.0.dist-info'
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: groundingdino
+  Building wheel for groundingdino (pyproject.toml): started
+  Running command Building wheel for groundingdino (pyproject.toml)
+  /isis/home/hasana3/miniconda3/envs/dino_sm120/lib/python3.10/site-packages/setuptools/config/_apply_pyprojecttoml.py:82: SetuptoolsDeprecationWarning: `project.license` as a TOML table is deprecated
+  !!
+
+          ********************************************************************************
+          Please use a simple string containing a SPDX expression for `project.license`. You can also use `project.license-files`. (Both options available on setuptools>=77.0.0).
+
+          By 2027-Feb-18, you need to update your project and remove deprecated calls
+          or your builds will no longer be supported.
+
+          See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+          ********************************************************************************
+
+  !!
+    corresp(dist, value, root_dir)
+  Compiling sources: ['groundingdino/models/GroundingDINO/csrc/vision.cpp', 'groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu', 'groundingdino/models/GroundingDINO/csrc/cuda_version.cu', 'groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cpu.cpp']
+  Compiling with CUDA (CUDA_HOME: /isis/home/hasana3/miniconda3/envs/dino_sm120)
+  running bdist_wheel
+  running build
+  running build_py
+  creating build/lib.linux-x86_64-cpython-310/groundingdino
+  copying groundingdino/version.py -> build/lib.linux-x86_64-cpython-310/groundingdino
+  copying groundingdino/__init__.py -> build/lib.linux-x86_64-cpython-310/groundingdino
+  creating build/lib.linux-x86_64-cpython-310/groundingdino/util
+  copying groundingdino/util/utils.py -> build/lib.linux-x86_64-cpython-310/groundingdino/util
+  copying groundingdino/util/slconfig.py -> build/lib.linux-x86_64-cpython-310/groundingdino/util
+  copying groundingdino/util/box_ops.py -> build/lib.linux-x86_64-cpython-310/groundingdino/util
+  copying groundingdino/util/vl_utils.py -> build/lib.linux-x86_64-cpython-310/groundingdino/util
+  copying groundingdino/util/slio.py -> build/lib.linux-x86_64-cpython-310/groundingdino/util
+  copying groundingdino/util/time_counter.py -> build/lib.linux-x86_64-cpython-310/groundingdino/util
+  copying groundingdino/util/logger.py -> build/lib.linux-x86_64-cpython-310/groundingdino/util
+  copying groundingdino/util/get_tokenlizer.py -> build/lib.linux-x86_64-cpython-310/groundingdino/util
+  copying groundingdino/util/inference.py -> build/lib.linux-x86_64-cpython-310/groundingdino/util
+  copying groundingdino/util/misc.py -> build/lib.linux-x86_64-cpython-310/groundingdino/util
+  copying groundingdino/util/__init__.py -> build/lib.linux-x86_64-cpython-310/groundingdino/util
+  copying groundingdino/util/visualizer.py -> build/lib.linux-x86_64-cpython-310/groundingdino/util
+  creating build/lib.linux-x86_64-cpython-310/groundingdino/models
+  copying groundingdino/models/registry.py -> build/lib.linux-x86_64-cpython-310/groundingdino/models
+  copying groundingdino/models/__init__.py -> build/lib.linux-x86_64-cpython-310/groundingdino/models
+  creating build/lib.linux-x86_64-cpython-310/groundingdino/datasets
+  copying groundingdino/datasets/transforms.py -> build/lib.linux-x86_64-cpython-310/groundingdino/datasets
+  copying groundingdino/datasets/cocogrounding_eval.py -> build/lib.linux-x86_64-cpython-310/groundingdino/datasets
+  copying groundingdino/datasets/__init__.py -> build/lib.linux-x86_64-cpython-310/groundingdino/datasets
+  creating build/lib.linux-x86_64-cpython-310/groundingdino/config
+  copying groundingdino/config/GroundingDINO_SwinT_OGC.py -> build/lib.linux-x86_64-cpython-310/groundingdino/config
+  copying groundingdino/config/GroundingDINO_SwinB_cfg.py -> build/lib.linux-x86_64-cpython-310/groundingdino/config
+  copying groundingdino/config/__init__.py -> build/lib.linux-x86_64-cpython-310/groundingdino/config
+  creating build/lib.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO
+  copying groundingdino/models/GroundingDINO/utils.py -> build/lib.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO
+  copying groundingdino/models/GroundingDINO/transformer.py -> build/lib.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO
+  copying groundingdino/models/GroundingDINO/ms_deform_attn.py -> build/lib.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO
+  copying groundingdino/models/GroundingDINO/bertwarper.py -> build/lib.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO
+  copying groundingdino/models/GroundingDINO/__init__.py -> build/lib.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO
+  copying groundingdino/models/GroundingDINO/transformer_vanilla.py -> build/lib.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO
+  copying groundingdino/models/GroundingDINO/groundingdino.py -> build/lib.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO
+  copying groundingdino/models/GroundingDINO/fuse_modules.py -> build/lib.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO
+  creating build/lib.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/backbone
+  copying groundingdino/models/GroundingDINO/backbone/swin_transformer.py -> build/lib.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/backbone
+  copying groundingdino/models/GroundingDINO/backbone/backbone.py -> build/lib.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/backbone
+  copying groundingdino/models/GroundingDINO/backbone/position_encoding.py -> build/lib.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/backbone
+  copying groundingdino/models/GroundingDINO/backbone/__init__.py -> build/lib.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/backbone
+  running egg_info
+  creating groundingdino.egg-info
+  writing groundingdino.egg-info/PKG-INFO
+  writing dependency_links to groundingdino.egg-info/dependency_links.txt
+  writing requirements to groundingdino.egg-info/requires.txt
+  writing top-level names to groundingdino.egg-info/top_level.txt
+  writing manifest file 'groundingdino.egg-info/SOURCES.txt'
+  reading manifest file 'groundingdino.egg-info/SOURCES.txt'
+  adding license file 'LICENSE'
+  writing manifest file 'groundingdino.egg-info/SOURCES.txt'
+  creating build/lib.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/csrc
+  copying groundingdino/models/GroundingDINO/csrc/cuda_version.cu -> build/lib.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/csrc
+  copying groundingdino/models/GroundingDINO/csrc/vision.cpp -> build/lib.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/csrc
+  creating build/lib.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/csrc/MsDeformAttn
+  copying groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cpu.cpp -> build/lib.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/csrc/MsDeformAttn
+  copying groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu -> build/lib.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/csrc/MsDeformAttn
+  running build_ext
+  /isis/home/hasana3/miniconda3/envs/dino_sm120/lib/python3.10/site-packages/torch/utils/cpp_extension.py:490: UserWarning: There are no /isis/home/hasana3/miniconda3/envs/dino_sm120/bin/x86_64-conda-linux-gnu-c++ version bounds defined for CUDA version 12.8
+    warnings.warn(f'There are no {compiler_name} version bounds defined for CUDA version {cuda_str_version}')
+  building 'groundingdino._C' extension
+  creating /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/build/temp.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/csrc/MsDeformAttn
+  Emitting ninja build file /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/build/temp.linux-x86_64-cpython-310/build.ninja...
+  Compiling objects...
+  Using envvar MAX_JOBS (8) as the number of workers...
+  [1/4] /isis/home/hasana3/miniconda3/envs/dino_sm120/bin/nvcc --generate-dependencies-with-compile --dependency-output /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/build/temp.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/csrc/cuda_version.o.d -DWITH_CUDA -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -I/tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc -I/isis/home/hasana3/miniconda3/envs/dino_sm120/lib/python3.10/site-packages/torch/include -I/isis/home/hasana3/miniconda3/envs/dino_sm120/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/isis/home/hasana3/miniconda3/envs/dino_sm120/include -I/isis/home/hasana3/miniconda3/envs/dino_sm120/include/python3.10 -c -c /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/cuda_version.cu -o /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/build/temp.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/csrc/cuda_version.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -DCUDA_HAS_FP16=1 --expt-relaxed-constexpr -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1016"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=1 -gencode=arch=compute_120,code=compute_120 -gencode=arch=compute_120,code=sm_120 -gencode=arch=compute_80,code=sm_80 -gencode=arch=compute_86,code=sm_86 -gencode=arch=compute_89,code=sm_89 -ccbin /isis/home/hasana3/miniconda3/envs/dino_sm120/bin/x86_64-conda-linux-gnu-cc -std=c++17
+  nvcc warning : incompatible redefinition for option 'compiler-bindir', the last value of this option was used
+  [2/4] /isis/home/hasana3/miniconda3/envs/dino_sm120/bin/x86_64-conda-linux-gnu-c++ -MMD -MF /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/build/temp.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cpu.o.d -march=x86-64-v2 -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /isis/home/hasana3/miniconda3/envs/dino_sm120/include -I/isis/home/hasana3/miniconda3/envs/dino_sm120/targets/x86_64-linux/include -L/isis/home/hasana3/miniconda3/envs/dino_sm120/targets/x86_64-linux/lib -L/isis/home/hasana3/miniconda3/envs/dino_sm120/targets/x86_64-linux/lib/stubs -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem /isis/home/hasana3/miniconda3/envs/dino_sm120/include -I/isis/home/hasana3/miniconda3/envs/dino_sm120/targets/x86_64-linux/include -L/isis/home/hasana3/miniconda3/envs/dino_sm120/targets/x86_64-linux/lib -L/isis/home/hasana3/miniconda3/envs/dino_sm120/targets/x86_64-linux/lib/stubs -fPIC -DWITH_CUDA -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -I/tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc -I/isis/home/hasana3/miniconda3/envs/dino_sm120/lib/python3.10/site-packages/torch/include -I/isis/home/hasana3/miniconda3/envs/dino_sm120/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/isis/home/hasana3/miniconda3/envs/dino_sm120/include -I/isis/home/hasana3/miniconda3/envs/dino_sm120/include/python3.10 -c -c /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cpu.cpp -o /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/build/temp.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cpu.o -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1016"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++17
+  [3/4] /isis/home/hasana3/miniconda3/envs/dino_sm120/bin/x86_64-conda-linux-gnu-c++ -MMD -MF /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/build/temp.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/csrc/vision.o.d -march=x86-64-v2 -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /isis/home/hasana3/miniconda3/envs/dino_sm120/include -I/isis/home/hasana3/miniconda3/envs/dino_sm120/targets/x86_64-linux/include -L/isis/home/hasana3/miniconda3/envs/dino_sm120/targets/x86_64-linux/lib -L/isis/home/hasana3/miniconda3/envs/dino_sm120/targets/x86_64-linux/lib/stubs -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem /isis/home/hasana3/miniconda3/envs/dino_sm120/include -I/isis/home/hasana3/miniconda3/envs/dino_sm120/targets/x86_64-linux/include -L/isis/home/hasana3/miniconda3/envs/dino_sm120/targets/x86_64-linux/lib -L/isis/home/hasana3/miniconda3/envs/dino_sm120/targets/x86_64-linux/lib/stubs -fPIC -DWITH_CUDA -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -I/tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc -I/isis/home/hasana3/miniconda3/envs/dino_sm120/lib/python3.10/site-packages/torch/include -I/isis/home/hasana3/miniconda3/envs/dino_sm120/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/isis/home/hasana3/miniconda3/envs/dino_sm120/include -I/isis/home/hasana3/miniconda3/envs/dino_sm120/include/python3.10 -c -c /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/vision.cpp -o /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/build/temp.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/csrc/vision.o -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1016"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++17
+  [4/4] /isis/home/hasana3/miniconda3/envs/dino_sm120/bin/nvcc --generate-dependencies-with-compile --dependency-output /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/build/temp.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.o.d -DWITH_CUDA -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -I/tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc -I/isis/home/hasana3/miniconda3/envs/dino_sm120/lib/python3.10/site-packages/torch/include -I/isis/home/hasana3/miniconda3/envs/dino_sm120/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/isis/home/hasana3/miniconda3/envs/dino_sm120/include -I/isis/home/hasana3/miniconda3/envs/dino_sm120/include/python3.10 -c -c /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu -o /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/build/temp.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -DCUDA_HAS_FP16=1 --expt-relaxed-constexpr -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1016"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=1 -gencode=arch=compute_120,code=compute_120 -gencode=arch=compute_120,code=sm_120 -gencode=arch=compute_80,code=sm_80 -gencode=arch=compute_86,code=sm_86 -gencode=arch=compute_89,code=sm_89 -ccbin /isis/home/hasana3/miniconda3/envs/dino_sm120/bin/x86_64-conda-linux-gnu-cc -std=c++17
+  nvcc warning : incompatible redefinition for option 'compiler-bindir', the last value of this option was used
+  /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_im2col_cuda.cuh(261): warning #177-D: variable "q_col" was declared but never referenced
+        const int q_col = _temp % num_query;
+                  ^
+            detected during instantiation of "void ms_deformable_im2col_cuda(cudaStream_t, const scalar_t *, const int64_t *, const int64_t *, const scalar_t *, const scalar_t *, int, int, int, int, int, int, int, scalar_t *) [with scalar_t=double]" at line 66 of /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu
+
+  Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+  /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_im2col_cuda.cuh(762): warning #177-D: variable "q_col" was declared but never referenced
+        const int q_col = _temp % num_query;
+                  ^
+            detected during instantiation of "void ms_deformable_col2im_cuda(cudaStream_t, const scalar_t *, const scalar_t *, const int64_t *, const int64_t *, const scalar_t *, const scalar_t *, int, int, int, int, int, int, int, scalar_t *, scalar_t *, scalar_t *) [with scalar_t=double]" at line 136 of /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu
+
+  /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_im2col_cuda.cuh(872): warning #177-D: variable "q_col" was declared but never referenced
+        const int q_col = _temp % num_query;
+                  ^
+            detected during instantiation of "void ms_deformable_col2im_cuda(cudaStream_t, const scalar_t *, const scalar_t *, const int64_t *, const int64_t *, const scalar_t *, const scalar_t *, int, int, int, int, int, int, int, scalar_t *, scalar_t *, scalar_t *) [with scalar_t=double]" at line 136 of /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu
+
+  /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_im2col_cuda.cuh(331): warning #177-D: variable "q_col" was declared but never referenced
+        const int q_col = _temp % num_query;
+                  ^
+            detected during instantiation of "void ms_deformable_col2im_cuda(cudaStream_t, const scalar_t *, const scalar_t *, const int64_t *, const int64_t *, const scalar_t *, const scalar_t *, int, int, int, int, int, int, int, scalar_t *, scalar_t *, scalar_t *) [with scalar_t=double]" at line 136 of /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu
+
+  /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_im2col_cuda.cuh(436): warning #177-D: variable "q_col" was declared but never referenced
+        const int q_col = _temp % num_query;
+                  ^
+            detected during instantiation of "void ms_deformable_col2im_cuda(cudaStream_t, const scalar_t *, const scalar_t *, const int64_t *, const int64_t *, const scalar_t *, const scalar_t *, int, int, int, int, int, int, int, scalar_t *, scalar_t *, scalar_t *) [with scalar_t=double]" at line 136 of /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu
+
+  /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_im2col_cuda.cuh(544): warning #177-D: variable "q_col" was declared but never referenced
+        const int q_col = _temp % num_query;
+                  ^
+            detected during instantiation of "void ms_deformable_col2im_cuda(cudaStream_t, const scalar_t *, const scalar_t *, const int64_t *, const int64_t *, const scalar_t *, const scalar_t *, int, int, int, int, int, int, int, scalar_t *, scalar_t *, scalar_t *) [with scalar_t=double]" at line 136 of /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu
+
+  /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_im2col_cuda.cuh(649): warning #177-D: variable "q_col" was declared but never referenced
+        const int q_col = _temp % num_query;
+                  ^
+            detected during instantiation of "void ms_deformable_col2im_cuda(cudaStream_t, const scalar_t *, const scalar_t *, const int64_t *, const int64_t *, const scalar_t *, const scalar_t *, int, int, int, int, int, int, int, scalar_t *, scalar_t *, scalar_t *) [with scalar_t=double]" at line 136 of /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu
+
+  /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_im2col_cuda.cuh(261): warning #177-D: variable "q_col" was declared but never referenced
+        const int q_col = _temp % num_query;
+                  ^
+            detected during instantiation of "void ms_deformable_im2col_cuda(cudaStream_t, const scalar_t *, const int64_t *, const int64_t *, const scalar_t *, const scalar_t *, int, int, int, int, int, int, int, scalar_t *) [with scalar_t=double]" at line 66 of /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu
+
+  Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+  /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_im2col_cuda.cuh(762): warning #177-D: variable "q_col" was declared but never referenced
+        const int q_col = _temp % num_query;
+                  ^
+            detected during instantiation of "void ms_deformable_col2im_cuda(cudaStream_t, const scalar_t *, const scalar_t *, const int64_t *, const int64_t *, const scalar_t *, const scalar_t *, int, int, int, int, int, int, int, scalar_t *, scalar_t *, scalar_t *) [with scalar_t=double]" at line 136 of /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu
+
+  /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_im2col_cuda.cuh(872): warning #177-D: variable "q_col" was declared but never referenced
+        const int q_col = _temp % num_query;
+                  ^
+            detected during instantiation of "void ms_deformable_col2im_cuda(cudaStream_t, const scalar_t *, const scalar_t *, const int64_t *, const int64_t *, const scalar_t *, const scalar_t *, int, int, int, int, int, int, int, scalar_t *, scalar_t *, scalar_t *) [with scalar_t=double]" at line 136 of /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu
+
+  /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_im2col_cuda.cuh(331): warning #177-D: variable "q_col" was declared but never referenced
+        const int q_col = _temp % num_query;
+                  ^
+            detected during instantiation of "void ms_deformable_col2im_cuda(cudaStream_t, const scalar_t *, const scalar_t *, const int64_t *, const int64_t *, const scalar_t *, const scalar_t *, int, int, int, int, int, int, int, scalar_t *, scalar_t *, scalar_t *) [with scalar_t=double]" at line 136 of /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu
+
+  /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_im2col_cuda.cuh(436): warning #177-D: variable "q_col" was declared but never referenced
+        const int q_col = _temp % num_query;
+                  ^
+            detected during instantiation of "void ms_deformable_col2im_cuda(cudaStream_t, const scalar_t *, const scalar_t *, const int64_t *, const int64_t *, const scalar_t *, const scalar_t *, int, int, int, int, int, int, int, scalar_t *, scalar_t *, scalar_t *) [with scalar_t=double]" at line 136 of /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu
+
+  /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_im2col_cuda.cuh(544): warning #177-D: variable "q_col" was declared but never referenced
+        const int q_col = _temp % num_query;
+                  ^
+            detected during instantiation of "void ms_deformable_col2im_cuda(cudaStream_t, const scalar_t *, const scalar_t *, const int64_t *, const int64_t *, const scalar_t *, const scalar_t *, int, int, int, int, int, int, int, scalar_t *, scalar_t *, scalar_t *) [with scalar_t=double]" at line 136 of /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu
+
+  /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_im2col_cuda.cuh(649): warning #177-D: variable "q_col" was declared but never referenced
+        const int q_col = _temp % num_query;
+                  ^
+            detected during instantiation of "void ms_deformable_col2im_cuda(cudaStream_t, const scalar_t *, const scalar_t *, const int64_t *, const int64_t *, const scalar_t *, const scalar_t *, int, int, int, int, int, int, int, scalar_t *, scalar_t *, scalar_t *) [with scalar_t=double]" at line 136 of /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu
+
+  /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_im2col_cuda.cuh(261): warning #177-D: variable "q_col" was declared but never referenced
+        const int q_col = _temp % num_query;
+                  ^
+            detected during instantiation of "void ms_deformable_im2col_cuda(cudaStream_t, const scalar_t *, const int64_t *, const int64_t *, const scalar_t *, const scalar_t *, int, int, int, int, int, int, int, scalar_t *) [with scalar_t=double]" at line 66 of /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu
+
+  Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+  /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_im2col_cuda.cuh(762): warning #177-D: variable "q_col" was declared but never referenced
+        const int q_col = _temp % num_query;
+                  ^
+            detected during instantiation of "void ms_deformable_col2im_cuda(cudaStream_t, const scalar_t *, const scalar_t *, const int64_t *, const int64_t *, const scalar_t *, const scalar_t *, int, int, int, int, int, int, int, scalar_t *, scalar_t *, scalar_t *) [with scalar_t=double]" at line 136 of /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu
+
+  /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_im2col_cuda.cuh(872): warning #177-D: variable "q_col" was declared but never referenced
+        const int q_col = _temp % num_query;
+                  ^
+            detected during instantiation of "void ms_deformable_col2im_cuda(cudaStream_t, const scalar_t *, const scalar_t *, const int64_t *, const int64_t *, const scalar_t *, const scalar_t *, int, int, int, int, int, int, int, scalar_t *, scalar_t *, scalar_t *) [with scalar_t=double]" at line 136 of /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu
+
+  /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_im2col_cuda.cuh(331): warning #177-D: variable "q_col" was declared but never referenced
+        const int q_col = _temp % num_query;
+                  ^
+            detected during instantiation of "void ms_deformable_col2im_cuda(cudaStream_t, const scalar_t *, const scalar_t *, const int64_t *, const int64_t *, const scalar_t *, const scalar_t *, int, int, int, int, int, int, int, scalar_t *, scalar_t *, scalar_t *) [with scalar_t=double]" at line 136 of /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu
+
+  /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_im2col_cuda.cuh(436): warning #177-D: variable "q_col" was declared but never referenced
+        const int q_col = _temp % num_query;
+                  ^
+            detected during instantiation of "void ms_deformable_col2im_cuda(cudaStream_t, const scalar_t *, const scalar_t *, const int64_t *, const int64_t *, const scalar_t *, const scalar_t *, int, int, int, int, int, int, int, scalar_t *, scalar_t *, scalar_t *) [with scalar_t=double]" at line 136 of /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu
+
+  /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_im2col_cuda.cuh(544): warning #177-D: variable "q_col" was declared but never referenced
+        const int q_col = _temp % num_query;
+                  ^
+            detected during instantiation of "void ms_deformable_col2im_cuda(cudaStream_t, const scalar_t *, const scalar_t *, const int64_t *, const int64_t *, const scalar_t *, const scalar_t *, int, int, int, int, int, int, int, scalar_t *, scalar_t *, scalar_t *) [with scalar_t=double]" at line 136 of /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu
+
+  /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_im2col_cuda.cuh(649): warning #177-D: variable "q_col" was declared but never referenced
+        const int q_col = _temp % num_query;
+                  ^
+            detected during instantiation of "void ms_deformable_col2im_cuda(cudaStream_t, const scalar_t *, const scalar_t *, const int64_t *, const int64_t *, const scalar_t *, const scalar_t *, int, int, int, int, int, int, int, scalar_t *, scalar_t *, scalar_t *) [with scalar_t=double]" at line 136 of /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu
+
+  /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_im2col_cuda.cuh(261): warning #177-D: variable "q_col" was declared but never referenced
+        const int q_col = _temp % num_query;
+                  ^
+            detected during instantiation of "void ms_deformable_im2col_cuda(cudaStream_t, const scalar_t *, const int64_t *, const int64_t *, const scalar_t *, const scalar_t *, int, int, int, int, int, int, int, scalar_t *) [with scalar_t=double]" at line 66 of /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu
+
+  Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+  /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_im2col_cuda.cuh(762): warning #177-D: variable "q_col" was declared but never referenced
+        const int q_col = _temp % num_query;
+                  ^
+            detected during instantiation of "void ms_deformable_col2im_cuda(cudaStream_t, const scalar_t *, const scalar_t *, const int64_t *, const int64_t *, const scalar_t *, const scalar_t *, int, int, int, int, int, int, int, scalar_t *, scalar_t *, scalar_t *) [with scalar_t=double]" at line 136 of /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu
+
+  /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_im2col_cuda.cuh(872): warning #177-D: variable "q_col" was declared but never referenced
+        const int q_col = _temp % num_query;
+                  ^
+            detected during instantiation of "void ms_deformable_col2im_cuda(cudaStream_t, const scalar_t *, const scalar_t *, const int64_t *, const int64_t *, const scalar_t *, const scalar_t *, int, int, int, int, int, int, int, scalar_t *, scalar_t *, scalar_t *) [with scalar_t=double]" at line 136 of /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu
+
+  /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_im2col_cuda.cuh(331): warning #177-D: variable "q_col" was declared but never referenced
+        const int q_col = _temp % num_query;
+                  ^
+            detected during instantiation of "void ms_deformable_col2im_cuda(cudaStream_t, const scalar_t *, const scalar_t *, const int64_t *, const int64_t *, const scalar_t *, const scalar_t *, int, int, int, int, int, int, int, scalar_t *, scalar_t *, scalar_t *) [with scalar_t=double]" at line 136 of /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu
+
+  /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_im2col_cuda.cuh(436): warning #177-D: variable "q_col" was declared but never referenced
+        const int q_col = _temp % num_query;
+                  ^
+            detected during instantiation of "void ms_deformable_col2im_cuda(cudaStream_t, const scalar_t *, const scalar_t *, const int64_t *, const int64_t *, const scalar_t *, const scalar_t *, int, int, int, int, int, int, int, scalar_t *, scalar_t *, scalar_t *) [with scalar_t=double]" at line 136 of /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu
+
+  /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_im2col_cuda.cuh(544): warning #177-D: variable "q_col" was declared but never referenced
+        const int q_col = _temp % num_query;
+                  ^
+            detected during instantiation of "void ms_deformable_col2im_cuda(cudaStream_t, const scalar_t *, const scalar_t *, const int64_t *, const int64_t *, const scalar_t *, const scalar_t *, int, int, int, int, int, int, int, scalar_t *, scalar_t *, scalar_t *) [with scalar_t=double]" at line 136 of /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu
+
+  /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_im2col_cuda.cuh(649): warning #177-D: variable "q_col" was declared but never referenced
+        const int q_col = _temp % num_query;
+                  ^
+            detected during instantiation of "void ms_deformable_col2im_cuda(cudaStream_t, const scalar_t *, const scalar_t *, const int64_t *, const int64_t *, const scalar_t *, const scalar_t *, int, int, int, int, int, int, int, scalar_t *, scalar_t *, scalar_t *) [with scalar_t=double]" at line 136 of /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu
+
+  /isis/home/hasana3/miniconda3/envs/dino_sm120/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -fmessage-length=0 -march=x86-64-v2 -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /isis/home/hasana3/miniconda3/envs/dino_sm120/include -I/isis/home/hasana3/miniconda3/envs/dino_sm120/targets/x86_64-linux/include -L/isis/home/hasana3/miniconda3/envs/dino_sm120/targets/x86_64-linux/lib -L/isis/home/hasana3/miniconda3/envs/dino_sm120/targets/x86_64-linux/lib/stubs -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem /isis/home/hasana3/miniconda3/envs/dino_sm120/include -I/isis/home/hasana3/miniconda3/envs/dino_sm120/targets/x86_64-linux/include -L/isis/home/hasana3/miniconda3/envs/dino_sm120/targets/x86_64-linux/lib -L/isis/home/hasana3/miniconda3/envs/dino_sm120/targets/x86_64-linux/lib/stubs -pthread -B /isis/home/hasana3/miniconda3/envs/dino_sm120/compiler_compat -shared -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/isis/home/hasana3/miniconda3/envs/dino_sm120/lib -Wl,-rpath-link,/isis/home/hasana3/miniconda3/envs/dino_sm120/lib -L/isis/home/hasana3/miniconda3/envs/dino_sm120/lib -L/isis/home/hasana3/miniconda3/envs/dino_sm120/targets/x86_64-linux/lib -L/isis/home/hasana3/miniconda3/envs/dino_sm120/targets/x86_64-linux/lib/stubs -fvisibility-inlines-hidden -fmessage-length=0 -march=x86-64-v2 -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /isis/home/hasana3/miniconda3/envs/dino_sm120/include -I/isis/home/hasana3/miniconda3/envs/dino_sm120/targets/x86_64-linux/include -L/isis/home/hasana3/miniconda3/envs/dino_sm120/targets/x86_64-linux/lib -L/isis/home/hasana3/miniconda3/envs/dino_sm120/targets/x86_64-linux/lib/stubs -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem /isis/home/hasana3/miniconda3/envs/dino_sm120/include -I/isis/home/hasana3/miniconda3/envs/dino_sm120/targets/x86_64-linux/include -L/isis/home/hasana3/miniconda3/envs/dino_sm120/targets/x86_64-linux/lib -L/isis/home/hasana3/miniconda3/envs/dino_sm120/targets/x86_64-linux/lib/stubs /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/build/temp.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cpu.o /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/build/temp.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.o /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/build/temp.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/csrc/cuda_version.o /tmp/claude-1059315882/-isis-home-hasana3-vlmtest/827a6ad1-4914-44d4-b4a6-63aa869c4c59/scratchpad/gdino_sm120_src/build/temp.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/csrc/vision.o -L/isis/home/hasana3/miniconda3/envs/dino_sm120/lib/python3.10/site-packages/torch/lib -L/isis/home/hasana3/miniconda3/envs/dino_sm120/lib -lc10 -ltorch -ltorch_cpu -ltorch_python -lcudart -lc10_cuda -ltorch_cuda -o build/lib.linux-x86_64-cpython-310/groundingdino/_C.cpython-310-x86_64-linux-gnu.so
+  installing to build/bdist.linux-x86_64/wheel
+  running install
+  running install_lib
+  creating build/bdist.linux-x86_64/wheel
+  creating build/bdist.linux-x86_64/wheel/groundingdino
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/version.py -> build/bdist.linux-x86_64/wheel/./groundingdino
+  creating build/bdist.linux-x86_64/wheel/groundingdino/util
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/util/utils.py -> build/bdist.linux-x86_64/wheel/./groundingdino/util
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/util/slconfig.py -> build/bdist.linux-x86_64/wheel/./groundingdino/util
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/util/box_ops.py -> build/bdist.linux-x86_64/wheel/./groundingdino/util
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/util/vl_utils.py -> build/bdist.linux-x86_64/wheel/./groundingdino/util
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/util/slio.py -> build/bdist.linux-x86_64/wheel/./groundingdino/util
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/util/time_counter.py -> build/bdist.linux-x86_64/wheel/./groundingdino/util
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/util/logger.py -> build/bdist.linux-x86_64/wheel/./groundingdino/util
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/util/get_tokenlizer.py -> build/bdist.linux-x86_64/wheel/./groundingdino/util
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/util/inference.py -> build/bdist.linux-x86_64/wheel/./groundingdino/util
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/util/misc.py -> build/bdist.linux-x86_64/wheel/./groundingdino/util
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/util/__init__.py -> build/bdist.linux-x86_64/wheel/./groundingdino/util
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/util/visualizer.py -> build/bdist.linux-x86_64/wheel/./groundingdino/util
+  creating build/bdist.linux-x86_64/wheel/groundingdino/models
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/models/registry.py -> build/bdist.linux-x86_64/wheel/./groundingdino/models
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/models/__init__.py -> build/bdist.linux-x86_64/wheel/./groundingdino/models
+  creating build/bdist.linux-x86_64/wheel/groundingdino/models/GroundingDINO
+  creating build/bdist.linux-x86_64/wheel/groundingdino/models/GroundingDINO/csrc
+  creating build/bdist.linux-x86_64/wheel/groundingdino/models/GroundingDINO/csrc/MsDeformAttn
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu -> build/bdist.linux-x86_64/wheel/./groundingdino/models/GroundingDINO/csrc/MsDeformAttn
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cpu.cpp -> build/bdist.linux-x86_64/wheel/./groundingdino/models/GroundingDINO/csrc/MsDeformAttn
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/csrc/vision.cpp -> build/bdist.linux-x86_64/wheel/./groundingdino/models/GroundingDINO/csrc
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/csrc/cuda_version.cu -> build/bdist.linux-x86_64/wheel/./groundingdino/models/GroundingDINO/csrc
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/utils.py -> build/bdist.linux-x86_64/wheel/./groundingdino/models/GroundingDINO
+  creating build/bdist.linux-x86_64/wheel/groundingdino/models/GroundingDINO/backbone
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/backbone/swin_transformer.py -> build/bdist.linux-x86_64/wheel/./groundingdino/models/GroundingDINO/backbone
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/backbone/backbone.py -> build/bdist.linux-x86_64/wheel/./groundingdino/models/GroundingDINO/backbone
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/backbone/position_encoding.py -> build/bdist.linux-x86_64/wheel/./groundingdino/models/GroundingDINO/backbone
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/backbone/__init__.py -> build/bdist.linux-x86_64/wheel/./groundingdino/models/GroundingDINO/backbone
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/transformer.py -> build/bdist.linux-x86_64/wheel/./groundingdino/models/GroundingDINO
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/ms_deform_attn.py -> build/bdist.linux-x86_64/wheel/./groundingdino/models/GroundingDINO
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/bertwarper.py -> build/bdist.linux-x86_64/wheel/./groundingdino/models/GroundingDINO
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/__init__.py -> build/bdist.linux-x86_64/wheel/./groundingdino/models/GroundingDINO
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/transformer_vanilla.py -> build/bdist.linux-x86_64/wheel/./groundingdino/models/GroundingDINO
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/groundingdino.py -> build/bdist.linux-x86_64/wheel/./groundingdino/models/GroundingDINO
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/models/GroundingDINO/fuse_modules.py -> build/bdist.linux-x86_64/wheel/./groundingdino/models/GroundingDINO
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/_C.cpython-310-x86_64-linux-gnu.so -> build/bdist.linux-x86_64/wheel/./groundingdino
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/__init__.py -> build/bdist.linux-x86_64/wheel/./groundingdino
+  creating build/bdist.linux-x86_64/wheel/groundingdino/datasets
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/datasets/transforms.py -> build/bdist.linux-x86_64/wheel/./groundingdino/datasets
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/datasets/cocogrounding_eval.py -> build/bdist.linux-x86_64/wheel/./groundingdino/datasets
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/datasets/__init__.py -> build/bdist.linux-x86_64/wheel/./groundingdino/datasets
+  creating build/bdist.linux-x86_64/wheel/groundingdino/config
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/config/GroundingDINO_SwinT_OGC.py -> build/bdist.linux-x86_64/wheel/./groundingdino/config
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/config/GroundingDINO_SwinB_cfg.py -> build/bdist.linux-x86_64/wheel/./groundingdino/config
+  copying build/lib.linux-x86_64-cpython-310/groundingdino/config/__init__.py -> build/bdist.linux-x86_64/wheel/./groundingdino/config
+  running install_egg_info
+  Copying groundingdino.egg-info to build/bdist.linux-x86_64/wheel/./groundingdino-0.1.0-py3.10.egg-info
+  running install_scripts
+  creating build/bdist.linux-x86_64/wheel/groundingdino-0.1.0.dist-info/WHEEL
+  creating '/tmp/pip-ephem-wheel-cache-7xjq77r0/wheels/6d/46/88/f05cb06d3c65e9c3c7336a4c5c5c2c3f177e75449cce292ce3/tmphpqqa8ni/.tmp-f55rvj7r/groundingdino-0.1.0-cp310-cp310-linux_x86_64.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+  adding 'groundingdino/_C.cpython-310-x86_64-linux-gnu.so'
+  adding 'groundingdino/__init__.py'
+  adding 'groundingdino/version.py'
+  adding 'groundingdino/config/GroundingDINO_SwinB_cfg.py'
+  adding 'groundingdino/config/GroundingDINO_SwinT_OGC.py'
+  adding 'groundingdino/config/__init__.py'
+  adding 'groundingdino/datasets/__init__.py'
+  adding 'groundingdino/datasets/cocogrounding_eval.py'
+  adding 'groundingdino/datasets/transforms.py'
+  adding 'groundingdino/models/__init__.py'
+  adding 'groundingdino/models/registry.py'
+  adding 'groundingdino/models/GroundingDINO/__init__.py'
+  adding 'groundingdino/models/GroundingDINO/bertwarper.py'
+  adding 'groundingdino/models/GroundingDINO/fuse_modules.py'
+  adding 'groundingdino/models/GroundingDINO/groundingdino.py'
+  adding 'groundingdino/models/GroundingDINO/ms_deform_attn.py'
+  adding 'groundingdino/models/GroundingDINO/transformer.py'
+  adding 'groundingdino/models/GroundingDINO/transformer_vanilla.py'
+  adding 'groundingdino/models/GroundingDINO/utils.py'
+  adding 'groundingdino/models/GroundingDINO/backbone/__init__.py'
+  adding 'groundingdino/models/GroundingDINO/backbone/backbone.py'
+  adding 'groundingdino/models/GroundingDINO/backbone/position_encoding.py'
+  adding 'groundingdino/models/GroundingDINO/backbone/swin_transformer.py'
+  adding 'groundingdino/models/GroundingDINO/csrc/cuda_version.cu'
+  adding 'groundingdino/models/GroundingDINO/csrc/vision.cpp'
+  adding 'groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cpu.cpp'
+  adding 'groundingdino/models/GroundingDINO/csrc/MsDeformAttn/ms_deform_attn_cuda.cu'
+  adding 'groundingdino/util/__init__.py'
+  adding 'groundingdino/util/box_ops.py'
+  adding 'groundingdino/util/get_tokenlizer.py'
+  adding 'groundingdino/util/inference.py'
+  adding 'groundingdino/util/logger.py'
+  adding 'groundingdino/util/misc.py'
+  adding 'groundingdino/util/slconfig.py'
+  adding 'groundingdino/util/slio.py'
+  adding 'groundingdino/util/time_counter.py'
+  adding 'groundingdino/util/utils.py'
+  adding 'groundingdino/util/visualizer.py'
+  adding 'groundingdino/util/vl_utils.py'
+  adding 'groundingdino-0.1.0.dist-info/licenses/LICENSE'
+  adding 'groundingdino-0.1.0.dist-info/METADATA'
+  adding 'groundingdino-0.1.0.dist-info/WHEEL'
+  adding 'groundingdino-0.1.0.dist-info/top_level.txt'
+  adding 'groundingdino-0.1.0.dist-info/RECORD'
+  removing build/bdist.linux-x86_64/wheel
+  Building wheel for groundingdino (pyproject.toml): finished with status 'done'
+  Created wheel for groundingdino: filename=groundingdino-0.1.0-cp310-cp310-linux_x86_64.whl size=483050 sha256=2671b3322da5dad8b0a5c48903d41a5b6e04f88e769f724ebf92c2aa94816b2a
+  Stored in directory: /tmp/pip-ephem-wheel-cache-7xjq77r0/wheels/6d/46/88/f05cb06d3c65e9c3c7336a4c5c5c2c3f177e75449cce292ce3
+Successfully built groundingdino
+Installing collected packages: groundingdino
+Successfully installed groundingdino-0.1.0
